@@ -7,6 +7,7 @@ import common as C
 from content_rank1 import RANK1
 from content_rank2 import RANK2
 from content_rank3 import RANK3
+from content_rank4_10 import PAGES_4_10
 
 NOWIN = getattr(subprocess, "CREATE_NO_WINDOW", 0)
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # insta/
@@ -177,6 +178,14 @@ def page(v, others):
     tl = (timeline_svg(v, dur, subs, speech) + f'<div class="legend">{legend}<span><i class="isub"></i>화면 자막</span>'
           f'<span><i class="ispk"></i>음성(Whisper)</span></div>')
     shots = "".join(shot_card(v, sh) for sh in v["shots"])
+    if not v["transitions"]:
+        cuts = [f"{sh['t1']:.2f}" for sh in v["shots"][:-1] if not sh.get("tr")]
+        v["transitions"] = [{"t": f"{sh['t1']:.2f}초", "type": sh.get("out", ""), "frames": f"{sh['tr'][1]}초",
+                             "how": "", "ffmpeg": f"xfade=transition={sh['tr'][0]}:duration={sh['tr'][1]}",
+                             "capcut": "휙/블러", "pro": "Whip / Directional Blur"} for sh in v["shots"][:-1] if sh.get("tr")]
+        if cuts:
+            v["transitions"].append({"t": " · ".join(cuts) + "초", "type": "하드 컷", "frames": "0", "how": "편집 컷(또는 장면 구분)",
+                                     "ffmpeg": "하드컷(concat)", "capcut": "없음", "pro": "Cut"})
     trs = "".join(f'<tr><td>{E(t["t"])}</td><td>{E(t["type"])}</td><td>{E(t["frames"])}</td><td>{E(t["how"])}</td>'
                   f'<td><code>{E(t["ffmpeg"])}</code></td><td>{E(t["capcut"])}</td><td>{E(t["pro"])}</td></tr>'
                   for t in v["transitions"])
@@ -322,14 +331,14 @@ def index(pages):
                     f'<div><b>{v["rank"]}위 · {E(v["title"])}</b><p>{E(v["one_liner"])}</p></div></a>' for v in pages)
     css = CSS + ".cards{display:grid;gap:14px}.card{display:grid;grid-template-columns:120px 1fr;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;color:var(--ink);text-decoration:none}.card img{width:100%;border-radius:10px}"
     return (f'<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<title>김꾸이 TOP3 분석</title><style>{css}</style></head><body><div class="top"><h1>@ggooiikim TOP3 — 똑같이 만들기 분석서</h1></div>'
+            f'<title>인스타 김꾸이 TOP10 영상 분석</title><style>{css}</style></head><body><div class="top"><h1>인스타 햄찌 김꾸이(@ggooiikim) TOP10 — 똑같이 만들기 분석서</h1></div>'
             f'<main><p class="lead">한 페이지 = 한 영상. 각 페이지에 샷별 캡처·구도·전환·사운드·AI 프롬프트·모델·FFmpeg/HyperFrames 편집법이 있습니다.</p>'
             f'<div class="cards">{cards}</div></main></body></html>')
 
 
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
-    pages = [RANK1, RANK2, RANK3]
+    pages = [RANK1, RANK2, RANK3] + PAGES_4_10
     for v in pages:
         open(os.path.join(OUT, v["file"]), "w", encoding="utf-8").write(page(v, pages))
         print("wrote", v["file"], len(v["shots"]), "shots")

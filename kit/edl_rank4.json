@@ -1,0 +1,84 @@
+{
+ "name": "rank4_DcvaFq6ianJ",
+ "fps": 24,
+ "w": 1080,
+ "h": 1920,
+ "clips_dir": "clips",
+ "output": "rank4.mp4",
+ "shots": [
+  {
+   "id": "S01",
+   "file": "S01.mp4",
+   "in": 0.0,
+   "t0": 0.0,
+   "t1": 2.9
+  },
+  {
+   "id": "S02",
+   "file": "S02.mp4",
+   "in": 0.0,
+   "t0": 2.9,
+   "t1": 10.5
+  },
+  {
+   "id": "S03",
+   "file": "S03.mp4",
+   "in": 0.0,
+   "t0": 10.5,
+   "t1": 17.5
+  },
+  {
+   "id": "S04",
+   "file": "S04.mp4",
+   "in": 0.0,
+   "t0": 17.5,
+   "t1": 21.5
+  },
+  {
+   "id": "S05",
+   "file": "S05.mp4",
+   "in": 0.0,
+   "t0": 21.5,
+   "t1": 26.71,
+   "push": 0.12
+  }
+ ],
+ "subs": {
+  "style": {
+   "kr_size": 58,
+   "en_size": 34,
+   "kr_y": 0.46,
+   "en_dy": 0.039,
+   "jp_dy": 0.07,
+   "jp_size": 30,
+   "outline": 2.4,
+   "shadow": 1.8,
+   "kr_font": "Pretendard SemiBold",
+   "en_font": "Pretendard",
+   "jp_font": "Noto Sans JP"
+  },
+  "events": [
+   {
+    "t0": 0.25,
+    "t1": 1.05,
+    "kr": "춘리마라탕 먹방이다 꾸이",
+    "en": "Today's mukbang is Chunri Malatang~",
+    "jp": ""
+   },
+   {
+    "t0": 1.15,
+    "t1": 2.9,
+    "kr": "매운맛 2단계 마라맛 3단계로 ㄱ",
+    "en": "Let's go with spice level 2 and mala level 3!",
+    "jp": ""
+   }
+  ]
+ },
+ "audio": {
+  "clip_gain": 1.0,
+  "music": null,
+  "sfx": [],
+  "lufs": -14,
+  "tp": -1.0
+ }
+}

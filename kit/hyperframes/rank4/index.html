@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>rank4_DcvaFq6ianJ</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Pretendard"; src: url("fonts/Pretendard-SemiBold.otf") format("opentype"); font-weight: 600; }
+      @font-face { font-family: "Noto Sans JP"; src: url("fonts/NotoSansJP-SemiBold.ttf") format("truetype"); font-weight: 600; }
+      body { margin: 0; background: #000; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #000; }
+      .shot, .inner { position: absolute; inset: 0; }
+      .shot video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+      .flash { position: absolute; inset: 0; background: #fff; opacity: 0; }
+      .cap { position: absolute; inset: 0; color: #fff; text-align: center; }
+      .cap p { position: absolute; left: 0; right: 0; margin: 0; line-height: 1.2; font-weight: 600;
+               text-shadow: 0 0 3px rgba(0, 0, 0, 0.85), 0 2px 4px rgba(0, 0, 0, 0.55); }
+      .cap .kr, .cap .en { font-family: "Pretendard", sans-serif; }
+      .cap .jp { font-family: "Noto Sans JP", sans-serif; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-width="1080" data-height="1920" data-duration="26.71">
+      <div class="shot" id="shot-S01"><div class="inner" id="in-S01"><video id="v-S01" class="clip" src="clips/S01.mp4" data-start="0" data-duration="2.9" data-media-start="0" data-track-index="0" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S02"><div class="inner" id="in-S02"><video id="v-S02" class="clip" src="clips/S02.mp4" data-start="2.9" data-duration="7.6" data-media-start="0" data-track-index="1" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S03"><div class="inner" id="in-S03"><video id="v-S03" class="clip" src="clips/S03.mp4" data-start="10.5" data-duration="7" data-media-start="0" data-track-index="0" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S04"><div class="inner" id="in-S04"><video id="v-S04" class="clip" src="clips/S04.mp4" data-start="17.5" data-duration="4" data-media-start="0" data-track-index="1" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S05"><div class="inner" id="in-S05"><video id="v-S05" class="clip" src="clips/S05.mp4" data-start="21.5" data-duration="5.21" data-media-start="0" data-track-index="0" muted playsinline></video></div></div>
+      <audio id="a-S01" src="clips/S01.mp4" data-start="0" data-duration="2.9" data-media-start="0" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="a-S02" src="clips/S02.mp4" data-start="2.9" data-duration="7.6" data-media-start="0" data-track-index="11" data-volume="1.0"></audio>
+      <audio id="a-S03" src="clips/S03.mp4" data-start="10.5" data-duration="7" data-media-start="0" data-track-index="12" data-volume="1.0"></audio>
+      <audio id="a-S04" src="clips/S04.mp4" data-start="17.5" data-duration="4" data-media-start="0" data-track-index="13" data-volume="1.0"></audio>
+      <audio id="a-S05" src="clips/S05.mp4" data-start="21.5" data-duration="5.21" data-media-start="0" data-track-index="14" data-volume="1.0"></audio>
+      <div class="cap clip" id="cap-00" data-start="0.25" data-duration="0.8" data-track-index="20"><p class="kr" style="top: 847px; font-size: 58px">춘리마라탕 먹방이다 꾸이</p><p class="en" style="top: 937px; font-size: 34px">Today&#x27;s mukbang is Chunri Malatang~</p></div>
+      <div class="cap clip" id="cap-01" data-start="1.15" data-duration="1.75" data-track-index="20"><p class="kr" style="top: 847px; font-size: 58px">매운맛 2단계 마라맛 3단계로 ㄱ</p><p class="en" style="top: 937px; font-size: 34px">Let&#x27;s go with spice level 2 and mala level 3!</p></div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo('#in-S05', {scale: 1}, {scale: 1.12, duration: 5.21, ease: 'none'}, 21.5);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+{
+ "name": "rank5_DcLbxpuima4",
+ "fps": 30,
+ "w": 1080,
+ "h": 1920,
+ "clips_dir": "clips",
+ "output": "rank5.mp4",
+ "shots": [
+  {
+   "id": "S01",
+   "file": "S01.mp4",
+   "in": 0.0,
+   "t0": 0.0,
+   "t1": 17.57,
+   "out": {
+    "type": "hblur",
+    "dur": 0.2
+   }
+  },
+  {
+   "id": "S02",
+   "file": "S02.mp4",
+   "in": 0.0,
+   "t0": 17.57,
+   "t1": 19.27
+  }
+ ],
+ "subs": {
+  "events": []
+ },
+ "audio": {
+  "clip_gain": 1.0,
+  "music": null,
+  "sfx": [],
+  "lufs": -14,
+  "tp": -1.0
+ }
+}

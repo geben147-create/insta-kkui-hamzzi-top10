@@ -1,0 +1,90 @@
+{
+ "name": "rank8_Dc4wWd3zOfM",
+ "fps": 30,
+ "w": 1080,
+ "h": 1920,
+ "clips_dir": "clips",
+ "output": "rank8.mp4",
+ "shots": [
+  {
+   "id": "S01",
+   "file": "S01.mp4",
+   "in": 0.0,
+   "t0": 0.0,
+   "t1": 2.73
+  },
+  {
+   "id": "S02",
+   "file": "S02.mp4",
+   "in": 0.0,
+   "t0": 2.73,
+   "t1": 4.1
+  },
+  {
+   "id": "S03",
+   "file": "S03.mp4",
+   "in": 0.0,
+   "t0": 4.1,
+   "t1": 6.33
+  },
+  {
+   "id": "S04",
+   "file": "S04.mp4",
+   "in": 0.0,
+   "t0": 6.33,
+   "t1": 14.47
+  },
+  {
+   "id": "S05",
+   "file": "S05.mp4",
+   "in": 0.0,
+   "t0": 14.47,
+   "t1": 17.33
+  },
+  {
+   "id": "S06",
+   "file": "S06.mp4",
+   "in": 0.0,
+   "t0": 17.33,
+   "t1": 20.03
+  }
+ ],
+ "subs": {
+  "style": {
+   "kr_size": 56,
+   "en_size": 32,
+   "kr_y": 0.63,
+   "en_dy": 0.045,
+   "jp_dy": 0.068,
+   "jp_size": 30,
+   "outline": 2.4,
+   "shadow": 1.8,
+   "kr_font": "Pretendard SemiBold",
+   "en_font": "Pretendard",
+   "jp_font": "Noto Sans JP"
+  },
+  "events": [
+   {
+    "t0": 0.3,
+    "t1": 2.7,
+    "kr": "오늘은 마카롱 우유 말먹이다 꾸이!",
+    "en": "Today, we're having macarons with milk!",
+    "jp": ""
+   },
+   {
+    "t0": 18.5,
+    "t1": 20.0,
+    "kr": "입에서 사르르 녹는다 꾸이...",
+    "en": "It just melts in my mouth...",
+    "jp": "口の中でとろ〜っと溶ける…"
+   }
+  ]
+ },
+ "audio": {
+  "clip_gain": 1.0,
+  "music": null,
+  "sfx": [],
+  "lufs": -14,
+  "tp": -1.0
+ }
+}

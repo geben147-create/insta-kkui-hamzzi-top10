@@ -1,0 +1,154 @@
+{
+ "name": "rank7_DdJBrq2z8QH",
+ "fps": 24,
+ "w": 1080,
+ "h": 1920,
+ "clips_dir": "clips",
+ "output": "rank7.mp4",
+ "shots": [
+  {
+   "id": "S01",
+   "file": "S01.mp4",
+   "in": 0.0,
+   "t0": 0.0,
+   "t1": 1.38
+  },
+  {
+   "id": "S02",
+   "file": "S02.mp4",
+   "in": 0.0,
+   "t0": 1.38,
+   "t1": 11.67
+  },
+  {
+   "id": "S03",
+   "file": "S03.mp4",
+   "in": 0.0,
+   "t0": 11.67,
+   "t1": 21.54,
+   "push": 0.12
+  },
+  {
+   "id": "S04",
+   "file": "S04.mp4",
+   "in": 0.0,
+   "t0": 21.54,
+   "t1": 24.17
+  },
+  {
+   "id": "S05",
+   "file": "S05.mp4",
+   "in": 0.0,
+   "t0": 24.17,
+   "t1": 25.0
+  },
+  {
+   "id": "S06",
+   "file": "S06.mp4",
+   "in": 0.0,
+   "t0": 25.0,
+   "t1": 28.4
+  },
+  {
+   "id": "S07",
+   "file": "S07.mp4",
+   "in": 0.0,
+   "t0": 28.4,
+   "t1": 29.04
+  },
+  {
+   "id": "S08",
+   "file": "S08.mp4",
+   "in": 0.0,
+   "t0": 29.04,
+   "t1": 32.08
+  }
+ ],
+ "subs": {
+  "style": {
+   "kr_size": 58,
+   "en_size": 34,
+   "kr_y": 0.667,
+   "en_dy": 0.036,
+   "jp_dy": 0.062,
+   "jp_size": 30,
+   "outline": 2.4,
+   "shadow": 1.8,
+   "kr_font": "Pretendard SemiBold",
+   "en_font": "Pretendard",
+   "jp_font": "Noto Sans JP"
+  },
+  "events": [
+   {
+    "t0": 10.2,
+    "t1": 11.6,
+    "kr": "한정선 맛있다ㅠㅠ",
+    "en": "Han Jeong-seon is so good",
+    "jp": "ハンジョンソン おいしい"
+   },
+   {
+    "t0": 16.0,
+    "t1": 17.75,
+    "kr": "다녀왔어~",
+    "en": "I'm back~",
+    "jp": "ただいま〜"
+   },
+   {
+    "t0": 17.75,
+    "t1": 19.25,
+    "kr": "아니, 또 먹었지?",
+    "en": "You ate again, didn't you?",
+    "jp": "また食べたでしょ？"
+   },
+   {
+    "t0": 19.25,
+    "t1": 19.75,
+    "kr": "아니! 몰라!",
+    "en": "No! I don't know!",
+    "jp": "違う！知らない！"
+   },
+   {
+    "t0": 19.75,
+    "t1": 21.5,
+    "kr": "입이 완전 하얗잖아!",
+    "en": "Your mouth is all white!",
+    "jp": "口が真っ白じゃん！"
+   },
+   {
+    "t0": 21.6,
+    "t1": 23.6,
+    "kr": "자, 체중계에 올라가 봐.",
+    "en": "Okay, get on the scale.",
+    "jp": ""
+   },
+   {
+    "t0": 25.25,
+    "t1": 27.0,
+    "kr": "어? 1.8킬로?!",
+    "en": "What? 1.8 kg?!",
+    "jp": "えっ？1.8キロ！？"
+   },
+   {
+    "t0": 27.25,
+    "t1": 28.3,
+    "kr": "오늘부터 같이 다이어트야!",
+    "en": "We're going on a diet together starting today!",
+    "jp": ""
+   },
+   {
+    "t0": 29.25,
+    "t1": 30.5,
+    "kr": "오늘부터 매일이야",
+    "en": "Every day from now on",
+    "jp": ""
+   }
+  ]
+ },
+ "audio": {
+  "clip_gain": 1.0,
+  "music": null,
+  "sfx": [],
+  "lufs": -14,
+  "tp": -1.0
+ }
+}
