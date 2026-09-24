@@ -1,0 +1,105 @@
+{
+ "name": "rank1_magma_popcorn_3clips",
+ "fps": 24,
+ "w": 1080,
+ "h": 1920,
+ "clips_dir": "clips",
+ "output": "rank1_3clips.mp4",
+ "shots": [
+  {
+   "id": "C1",
+   "file": "C1.mp4",
+   "in": 0.0,
+   "t0": 0.0,
+   "t1": 4.75,
+   "out": {
+    "type": "fadewhite",
+    "dur": 0.125
+   }
+  },
+  {
+   "id": "C2",
+   "file": "C2.mp4",
+   "in": 0.0,
+   "t0": 4.75,
+   "t1": 9.42,
+   "out": {
+    "type": "fade",
+    "dur": 0.25
+   }
+  },
+  {
+   "id": "C3",
+   "file": "C3.mp4",
+   "in": 0.0,
+   "t0": 9.42,
+   "t1": 12.04
+  }
+ ],
+ "subs": {
+  "events": []
+ },
+ "audio": {
+  "clip_gain": 0.0,
+  "music": null,
+  "lufs": -14,
+  "tp": -1.0,
+  "sfx": [
+   {
+    "file": "sfx/heli_wind_bed.wav",
+    "t": 0.0,
+    "gain_db": -18
+   },
+   {
+    "file": "sfx/kuii_kuii.wav",
+    "t": 0.2,
+    "gain_db": -2
+   },
+   {
+    "file": "sfx/bucket_clank.wav",
+    "t": 1.3,
+    "gain_db": -8
+   },
+   {
+    "file": "sfx/kernels_pour.wav",
+    "t": 2.0,
+    "gain_db": -6
+   },
+   {
+    "file": "sfx/lava_rumble.wav",
+    "t": 3.0,
+    "gain_db": -12
+   },
+   {
+    "file": "sfx/first_pop.wav",
+    "t": 4.75,
+    "gain_db": 0
+   },
+   {
+    "file": "sfx/popcorn_crackle_rise.wav",
+    "t": 4.85,
+    "gain_db": -3
+   },
+   {
+    "file": "sfx/whoosh_up.wav",
+    "t": 8.8,
+    "gain_db": -6
+   },
+   {
+    "file": "sfx/popcorn_avalanche.wav",
+    "t": 9.35,
+    "gain_db": 0
+   },
+   {
+    "file": "sfx/kuii_surprised.wav",
+    "t": 9.7,
+    "gain_db": -3
+   },
+   {
+    "file": "sfx/popcorn_settle.wav",
+    "t": 10.3,
+    "gain_db": -9
+   }
+  ]
+ }
+}

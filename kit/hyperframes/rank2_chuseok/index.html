@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>rank2_chuseok</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Pretendard"; src: url("fonts/Pretendard-SemiBold.otf") format("opentype"); font-weight: 600; }
+      @font-face { font-family: "Noto Sans JP"; src: url("fonts/NotoSansJP-SemiBold.ttf") format("truetype"); font-weight: 600; }
+      body { margin: 0; background: #000; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #000; }
+      .shot, .inner { position: absolute; inset: 0; }
+      .shot video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+      .flash { position: absolute; inset: 0; background: #fff; opacity: 0; }
+      .cap { position: absolute; inset: 0; color: #fff; text-align: center; }
+      .cap p { position: absolute; left: 0; right: 0; margin: 0; line-height: 1.2; font-weight: 600;
+               text-shadow: 0 0 3px rgba(0, 0, 0, 0.85), 0 2px 4px rgba(0, 0, 0, 0.55); }
+      .cap .kr, .cap .en { font-family: "Pretendard", sans-serif; }
+      .cap .jp { font-family: "Noto Sans JP", sans-serif; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-width="1080" data-height="1920" data-duration="44.5">
+      <div class="shot" id="shot-S01"><div class="inner" id="in-S01"><video id="v-S01" class="clip" src="clips/S01.mp4" data-start="0" data-duration="2.133" data-media-start="0" data-track-index="0" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S02"><div class="inner" id="in-S02"><video id="v-S02" class="clip" src="clips/S02.mp4" data-start="2.133" data-duration="1.567" data-media-start="0" data-track-index="1" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S03"><div class="inner" id="in-S03"><video id="v-S03" class="clip" src="clips/S03.mp4" data-start="3.7" data-duration="2.033" data-media-start="0" data-track-index="0" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S04"><div class="inner" id="in-S04"><video id="v-S04" class="clip" src="clips/S04.mp4" data-start="5.733" data-duration="2.667" data-media-start="0" data-track-index="1" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S05"><div class="inner" id="in-S05"><video id="v-S05" class="clip" src="clips/S05.mp4" data-start="8.2" data-duration="2.633" data-media-start="0" data-track-index="0" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S06"><div class="inner" id="in-S06"><video id="v-S06" class="clip" src="clips/S06.mp4" data-start="10.633" data-duration="3.167" data-media-start="0" data-track-index="1" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S07"><div class="inner" id="in-S07"><video id="v-S07" class="clip" src="clips/S07.mp4" data-start="13.6" data-duration="2.767" data-media-start="0" data-track-index="0" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S08"><div class="inner" id="in-S08"><video id="v-S08" class="clip" src="clips/S08.mp4" data-start="16.167" data-duration="4.233" data-media-start="0" data-track-index="1" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S09"><div class="inner" id="in-S09"><video id="v-S09" class="clip" src="clips/S09.mp4" data-start="20.4" data-duration="1.333" data-media-start="0" data-track-index="0" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S10"><div class="inner" id="in-S10"><video id="v-S10" class="clip" src="clips/S10.mp4" data-start="21.733" data-duration="3.234" data-media-start="0" data-track-index="1" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S11"><div class="inner" id="in-S11"><video id="v-S11" class="clip" src="clips/S11.mp4" data-start="24.967" data-duration="2.333" data-media-start="0" data-track-index="0" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S12"><div class="inner" id="in-S12"><video id="v-S12" class="clip" src="clips/S12.mp4" data-start="27.3" data-duration="2.175" data-media-start="0" data-track-index="1" muted playsinline></video></div></div>
+      <div class="flash clip" id="flash-S12" data-start="29.025" data-duration="0.45" data-track-index="30"></div>
+      <div class="shot" id="shot-S13"><div class="inner" id="in-S13"><video id="v-S13" class="clip" src="clips/S13.mp4" data-start="29.025" data-duration="1.775" data-media-start="0" data-track-index="0" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S14"><div class="inner" id="in-S14"><video id="v-S14" class="clip" src="clips/S14.mp4" data-start="30.8" data-duration="1.35" data-media-start="0" data-track-index="1" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S15"><div class="inner" id="in-S15"><video id="v-S15" class="clip" src="clips/S15.mp4" data-start="32.05" data-duration="1.95" data-media-start="0" data-track-index="0" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S16"><div class="inner" id="in-S16"><video id="v-S16" class="clip" src="clips/S16.mp4" data-start="34" data-duration="2.333" data-media-start="0" data-track-index="1" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S17"><div class="inner" id="in-S17"><video id="v-S17" class="clip" src="clips/S17.mp4" data-start="36.333" data-duration="3.775" data-media-start="0" data-track-index="0" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S18"><div class="inner" id="in-S18"><video id="v-S18" class="clip" src="clips/S18.mp4" data-start="39.958" data-duration="2.317" data-media-start="0" data-track-index="1" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S19"><div class="inner" id="in-S19"><video id="v-S19" class="clip" src="clips/S19.mp4" data-start="42.125" data-duration="2.375" data-media-start="0" data-track-index="0" muted playsinline></video></div></div>
+      <audio id="a-S01" src="clips/S01.mp4" data-start="0" data-duration="2.133" data-media-start="0" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="a-S02" src="clips/S02.mp4" data-start="2.133" data-duration="1.567" data-media-start="0" data-track-index="11" data-volume="1.0"></audio>
+      <audio id="a-S03" src="clips/S03.mp4" data-start="3.7" data-duration="2.033" data-media-start="0" data-track-index="12" data-volume="1.0"></audio>
+      <audio id="a-S04" src="clips/S04.mp4" data-start="5.733" data-duration="2.567" data-media-start="0" data-track-index="13" data-volume="1.0"></audio>
+      <audio id="a-S05" src="clips/S05.mp4" data-start="8.3" data-duration="2.433" data-media-start="0" data-track-index="14" data-volume="1.0"></audio>
+      <audio id="a-S06" src="clips/S06.mp4" data-start="10.733" data-duration="2.967" data-media-start="0" data-track-index="15" data-volume="1.0"></audio>
+      <audio id="a-S07" src="clips/S07.mp4" data-start="13.7" data-duration="2.567" data-media-start="0" data-track-index="16" data-volume="1.0"></audio>
+      <audio id="a-S08" src="clips/S08.mp4" data-start="16.267" data-duration="4.133" data-media-start="0" data-track-index="17" data-volume="1.0"></audio>
+      <audio id="a-S09" src="clips/S09.mp4" data-start="20.4" data-duration="1.333" data-media-start="0" data-track-index="18" data-volume="1.0"></audio>
+      <audio id="a-S10" src="clips/S10.mp4" data-start="21.733" data-duration="3.234" data-media-start="0" data-track-index="19" data-volume="1.0"></audio>
+      <audio id="a-S11" src="clips/S11.mp4" data-start="24.967" data-duration="2.333" data-media-start="0" data-track-index="20" data-volume="1.0"></audio>
+      <audio id="a-S12" src="clips/S12.mp4" data-start="27.3" data-duration="1.95" data-media-start="0" data-track-index="21" data-volume="1.0"></audio>
+      <audio id="a-S13" src="clips/S13.mp4" data-start="29.25" data-duration="1.55" data-media-start="0" data-track-index="22" data-volume="1.0"></audio>
+      <audio id="a-S14" src="clips/S14.mp4" data-start="30.8" data-duration="1.3" data-media-start="0" data-track-index="23" data-volume="1.0"></audio>
+      <audio id="a-S15" src="clips/S15.mp4" data-start="32.1" data-duration="1.9" data-media-start="0" data-track-index="24" data-volume="1.0"></audio>
+      <audio id="a-S16" src="clips/S16.mp4" data-start="34" data-duration="2.333" data-media-start="0" data-track-index="25" data-volume="1.0"></audio>
+      <audio id="a-S17" src="clips/S17.mp4" data-start="36.333" data-duration="3.7" data-media-start="0" data-track-index="26" data-volume="1.0"></audio>
+      <audio id="a-S18" src="clips/S18.mp4" data-start="40.033" data-duration="2.167" data-media-start="0" data-track-index="27" data-volume="1.0"></audio>
+      <audio id="a-S19" src="clips/S19.mp4" data-start="42.2" data-duration="2.3" data-media-start="0" data-track-index="28" data-volume="1.0"></audio>
+      <div class="cap clip" id="cap-00" data-start="0.4" data-duration="1.7" data-track-index="20"><p class="kr" style="top: 1415px; font-size: 46px">엄마, 아빠. 풍성한 한가위 보내세요!</p><p class="en" style="top: 1467px; font-size: 27px">Have a happy and abundant Chuseok!</p><p class="jp" style="top: 1506px; font-size: 26px">実り多い素敵なチュソク（秋夕）をお過ごしください！</p></div>
+      <div class="cap clip" id="cap-01" data-start="4.1" data-duration="1.6" data-track-index="20"><p class="kr" style="top: 1415px; font-size: 46px">절은 한 번만 하는거야.</p><p class="en" style="top: 1467px; font-size: 27px">You only do a big bow once.</p><p class="jp" style="top: 1506px; font-size: 26px">韓国の大きな礼（クンジョル）は1回だけするものだよ。</p></div>
+      <div class="cap clip" id="cap-02" data-start="6.4" data-duration="1.88" data-track-index="20"><p class="kr" style="top: 1415px; font-size: 46px">그래. 10만원씩 나눠 가져라.</p><p class="en" style="top: 1467px; font-size: 27px">Split this 100,000 won between you two.</p><p class="jp" style="top: 1506px; font-size: 26px">10万円ずつ分けて持ってね。</p></div>
+      <div class="cap clip" id="cap-03" data-start="9.5" data-duration="1.2" data-track-index="20"><p class="kr" style="top: 1415px; font-size: 46px">용돈이다~~!</p><p class="en" style="top: 1467px; font-size: 27px">Pocket money~~!</p><p class="jp" style="top: 1506px; font-size: 26px">お小遣いだ~~！</p></div>
+      <div class="cap clip" id="cap-04" data-start="11.2" data-duration="1.25" data-track-index="20"><p class="kr" style="top: 1415px; font-size: 46px">우리 송편 누가 더 잘 빚나 내기할래?</p><p class="en" style="top: 1467px; font-size: 27px">Wanna bet on who makes better songpyeon?</p><p class="jp" style="top: 1506px; font-size: 26px">どっちが上手にソンピョンを作れるか勝負しようよ！</p></div>
+      <div class="cap clip" id="cap-05" data-start="12.5" data-duration="1.15" data-track-index="20"><p class="kr" style="top: 1415px; font-size: 46px">좋아!</p><p class="en" style="top: 1467px; font-size: 27px">Deal!</p><p class="jp" style="top: 1506px; font-size: 26px">乗った！</p></div>
+      <div class="cap clip" id="cap-06" data-start="20.45" data-duration="1.25" data-track-index="20"><p class="kr" style="top: 1415px; font-size: 46px">차라리 대형 송편을 만들자.</p><p class="en" style="top: 1467px; font-size: 27px">Fine, I&#x27;ll just make a giant songpyeon.</p><p class="jp" style="top: 1506px; font-size: 26px">もう、いっそ巨大なソンピョンを作ろう。</p></div>
+      <div class="cap clip" id="cap-07" data-start="25.7" data-duration="1.58" data-track-index="20"><p class="kr" style="top: 1415px; font-size: 46px">대형 송편 완성이다 꾸이~~!</p><p class="en" style="top: 1467px; font-size: 27px">Giant songpyeon is done~~!</p><p class="jp" style="top: 1506px; font-size: 26px">巨大ソンピョン、完成~！</p></div>
+      <div class="cap clip" id="cap-08" data-start="28.25" data-duration="0.8" data-track-index="20"><p class="kr" style="top: 1415px; font-size: 46px">저게 뭐지....?</p><p class="en" style="top: 1467px; font-size: 27px">What is that....?</p><p class="jp" style="top: 1506px; font-size: 26px">あれはなんだ....？</p></div>
+      <div class="cap clip" id="cap-09" data-start="30.8" data-duration="1.25" data-track-index="20"><p class="kr" style="top: 1415px; font-size: 46px">맛있겠다~~!</p><p class="en" style="top: 1467px; font-size: 27px">Looks delicious~~!</p><p class="jp" style="top: 1506px; font-size: 26px">おいしそう~！</p></div>
+      <div class="cap clip" id="cap-10" data-start="32.6" data-duration="1.38" data-track-index="20"><p class="kr" style="top: 1415px; font-size: 46px">갈비찜 나간다, 얘들아~</p><p class="en" style="top: 1467px; font-size: 27px">Galbi-jjim is coming, kids!</p><p class="jp" style="top: 1506px; font-size: 26px">カルビチムできたよ、みんな〜！</p></div>
+      <div class="cap clip" id="cap-11" data-start="36.4" data-duration="3.6" data-track-index="20"><p class="kr" style="top: 1415px; font-size: 46px">(입에서 살살 녹는다 꾸이...)</p><p class="en" style="top: 1467px; font-size: 27px">It just melts in your mouth...</p><p class="jp" style="top: 1506px; font-size: 26px">口の中でとろける......</p></div>
+      <div class="cap clip" id="cap-12" data-start="40.1" data-duration="2.05" data-track-index="20"><p class="kr" style="top: 1415px; font-size: 46px">(맛있다 꾸이...)</p><p class="en" style="top: 1467px; font-size: 27px">So good...</p><p class="jp" style="top: 1506px; font-size: 26px">おいし......</p></div>
+      <div class="cap clip" id="cap-13" data-start="43.2" data-duration="1.3" data-track-index="20"><p class="kr" style="top: 1415px; font-size: 46px">매일 추석이었으면 좋겠다 꾸이!!!</p><p class="en" style="top: 1467px; font-size: 27px">I wish every day was Chuseok!!!</p><p class="jp" style="top: 1506px; font-size: 26px">毎日がチュソクならいいのに！！！</p></div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.set('#in-S05', {opacity: 0}, 0);tl.fromTo('#in-S04', {xPercent: 0, filter: 'blur(0px)'}, {xPercent: -22, filter: 'blur(26px)', duration: 0.1, ease: 'power2.in'}, 8.2);tl.set('#in-S05', {opacity: 1}, 8.3);tl.fromTo('#in-S05', {xPercent: 22, filter: 'blur(26px)'}, {xPercent: 0, filter: 'blur(0px)', duration: 0.1, ease: 'power2.out'}, 8.3);
+      tl.set('#in-S06', {opacity: 0}, 0);tl.fromTo('#in-S05', {xPercent: 0, filter: 'blur(0px)'}, {xPercent: -22, filter: 'blur(26px)', duration: 0.1, ease: 'power2.in'}, 10.633);tl.set('#in-S06', {opacity: 1}, 10.733);tl.fromTo('#in-S06', {xPercent: 22, filter: 'blur(26px)'}, {xPercent: 0, filter: 'blur(0px)', duration: 0.1, ease: 'power2.out'}, 10.733);
+      tl.set('#in-S07', {opacity: 0}, 0);tl.fromTo('#in-S06', {scale: 1, filter: 'blur(0px)'}, {scale: 1.35, filter: 'blur(14px)', duration: 0.1, ease: 'power2.in'}, 13.6);tl.set('#in-S07', {opacity: 1}, 13.7);tl.fromTo('#in-S07', {scale: 1.25, filter: 'blur(14px)'}, {scale: 1, filter: 'blur(0px)', duration: 0.1, ease: 'power2.out'}, 13.7);
+      tl.set('#in-S08', {opacity: 0}, 0);tl.fromTo('#in-S07', {xPercent: 0, filter: 'blur(0px)'}, {xPercent: -22, filter: 'blur(26px)', duration: 0.1, ease: 'power2.in'}, 16.167);tl.set('#in-S08', {opacity: 1}, 16.267);tl.fromTo('#in-S08', {xPercent: 22, filter: 'blur(26px)'}, {xPercent: 0, filter: 'blur(0px)', duration: 0.1, ease: 'power2.out'}, 16.267);
+      tl.set('#in-S13', {opacity: 0}, 0);tl.fromTo('#flash-S12', {opacity: 0}, {opacity: 1, duration: 0.225, ease: 'power1.in'}, 29.025);tl.set('#in-S13', {opacity: 1}, 29.25);tl.to('#flash-S12', {opacity: 0, duration: 0.225, ease: 'power1.out'}, 29.25);
+      tl.fromTo('#in-S15', {opacity: 0}, {opacity: 1, duration: 0.1, ease: 'none'}, 32.05);
+      tl.set('#in-S18', {opacity: 0}, 0);tl.fromTo('#in-S17', {xPercent: 0, filter: 'blur(0px)'}, {xPercent: -22, filter: 'blur(26px)', duration: 0.075, ease: 'power2.in'}, 39.958);tl.set('#in-S18', {opacity: 1}, 40.033);tl.fromTo('#in-S18', {xPercent: 22, filter: 'blur(26px)'}, {xPercent: 0, filter: 'blur(0px)', duration: 0.075, ease: 'power2.out'}, 40.033);
+      tl.set('#in-S19', {opacity: 0}, 0);tl.fromTo('#in-S18', {scaleX: 1}, {scaleX: 1.9, duration: 0.075, ease: 'power2.in'}, 42.125);tl.set('#in-S19', {opacity: 1}, 42.2);tl.fromTo('#in-S19', {scaleX: 1.9}, {scaleX: 1, duration: 0.075, ease: 'power2.out'}, 42.2);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

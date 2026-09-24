@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>rank1_magma_popcorn_3clips</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Pretendard"; src: url("fonts/Pretendard-SemiBold.otf") format("opentype"); font-weight: 600; }
+      @font-face { font-family: "Noto Sans JP"; src: url("fonts/NotoSansJP-SemiBold.ttf") format("truetype"); font-weight: 600; }
+      body { margin: 0; background: #000; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #000; }
+      .shot, .inner { position: absolute; inset: 0; }
+      .shot video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+      .flash { position: absolute; inset: 0; background: #fff; opacity: 0; }
+      .cap { position: absolute; inset: 0; color: #fff; text-align: center; }
+      .cap p { position: absolute; left: 0; right: 0; margin: 0; line-height: 1.2; font-weight: 600;
+               text-shadow: 0 0 3px rgba(0, 0, 0, 0.85), 0 2px 4px rgba(0, 0, 0, 0.55); }
+      .cap .kr, .cap .en { font-family: "Pretendard", sans-serif; }
+      .cap .jp { font-family: "Noto Sans JP", sans-serif; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-width="1080" data-height="1920" data-duration="12.04">
+      <div class="shot" id="shot-C1"><div class="inner" id="in-C1"><video id="v-C1" class="clip" src="clips/C1.mp4" data-start="0" data-duration="4.812" data-media-start="0" data-track-index="0" muted playsinline></video></div></div>
+      <div class="flash clip" id="flash-C1" data-start="4.688" data-duration="0.125" data-track-index="30"></div>
+      <div class="shot" id="shot-C2"><div class="inner" id="in-C2"><video id="v-C2" class="clip" src="clips/C2.mp4" data-start="4.688" data-duration="4.857" data-media-start="0" data-track-index="1" muted playsinline></video></div></div>
+      <div class="shot" id="shot-C3"><div class="inner" id="in-C3"><video id="v-C3" class="clip" src="clips/C3.mp4" data-start="9.295" data-duration="2.745" data-media-start="0" data-track-index="0" muted playsinline></video></div></div>
+      <audio id="sfx-00" src="sfx/heli_wind_bed.wav" data-start="0" data-track-index="50" data-volume="0.126"></audio>
+      <audio id="sfx-01" src="sfx/kuii_kuii.wav" data-start="0.2" data-track-index="51" data-volume="0.794"></audio>
+      <audio id="sfx-02" src="sfx/bucket_clank.wav" data-start="1.3" data-track-index="52" data-volume="0.398"></audio>
+      <audio id="sfx-03" src="sfx/kernels_pour.wav" data-start="2" data-track-index="53" data-volume="0.501"></audio>
+      <audio id="sfx-04" src="sfx/lava_rumble.wav" data-start="3" data-track-index="54" data-volume="0.251"></audio>
+      <audio id="sfx-05" src="sfx/first_pop.wav" data-start="4.75" data-track-index="55" data-volume="1.0"></audio>
+      <audio id="sfx-06" src="sfx/popcorn_crackle_rise.wav" data-start="4.85" data-track-index="56" data-volume="0.708"></audio>
+      <audio id="sfx-07" src="sfx/whoosh_up.wav" data-start="8.8" data-track-index="57" data-volume="0.501"></audio>
+      <audio id="sfx-08" src="sfx/popcorn_avalanche.wav" data-start="9.35" data-track-index="58" data-volume="1.0"></audio>
+      <audio id="sfx-09" src="sfx/kuii_surprised.wav" data-start="9.7" data-track-index="59" data-volume="0.708"></audio>
+      <audio id="sfx-10" src="sfx/popcorn_settle.wav" data-start="10.3" data-track-index="60" data-volume="0.355"></audio>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.set('#in-C2', {opacity: 0}, 0);tl.fromTo('#flash-C1', {opacity: 0}, {opacity: 1, duration: 0.062, ease: 'power1.in'}, 4.688);tl.set('#in-C2', {opacity: 1}, 4.75);tl.to('#flash-C1', {opacity: 0, duration: 0.062, ease: 'power1.out'}, 4.75);
+      tl.fromTo('#in-C3', {opacity: 0}, {opacity: 1, duration: 0.25, ease: 'none'}, 9.295);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

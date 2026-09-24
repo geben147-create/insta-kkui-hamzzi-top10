@@ -1,0 +1,27 @@
+{
+ "name": "rank1_magma_popcorn_onetake",
+ "fps": 24,
+ "w": 1080,
+ "h": 1920,
+ "clips_dir": "clips",
+ "output": "rank1_onetake.mp4",
+ "shots": [
+  {
+   "id": "S01",
+   "file": "S01.mp4",
+   "in": 0.0,
+   "t0": 0.0,
+   "t1": 12.04
+  }
+ ],
+ "subs": {
+  "events": []
+ },
+ "audio": {
+  "clip_gain": 1.0,
+  "music": null,
+  "sfx": [],
+  "lufs": -14,
+  "tp": -1.0
+ }
+}
