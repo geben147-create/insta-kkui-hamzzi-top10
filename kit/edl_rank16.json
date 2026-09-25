@@ -1,0 +1,181 @@
+{
+ "name": "rank16_DdTVlOUiOmo",
+ "fps": 24,
+ "w": 1080,
+ "h": 1920,
+ "clips_dir": "clips",
+ "output": "rank16.mp4",
+ "shots": [
+  {
+   "id": "S01",
+   "file": "S01.mp4",
+   "in": 0.0,
+   "t0": 0.0,
+   "t1": 6.0
+  },
+  {
+   "id": "S02",
+   "file": "S02.mp4",
+   "in": 0.0,
+   "t0": 6.0,
+   "t1": 10.5
+  },
+  {
+   "id": "S03",
+   "file": "S03.mp4",
+   "in": 0.0,
+   "t0": 10.5,
+   "t1": 14.0
+  },
+  {
+   "id": "S04",
+   "file": "S04.mp4",
+   "in": 0.0,
+   "t0": 14.0,
+   "t1": 22.5
+  },
+  {
+   "id": "S05",
+   "file": "S05.mp4",
+   "in": 0.0,
+   "t0": 22.5,
+   "t1": 24.5
+  },
+  {
+   "id": "S06",
+   "file": "S06.mp4",
+   "in": 0.0,
+   "t0": 24.5,
+   "t1": 28.0
+  },
+  {
+   "id": "S07",
+   "file": "S07.mp4",
+   "in": 0.0,
+   "t0": 28.0,
+   "t1": 30.8
+  },
+  {
+   "id": "S08",
+   "file": "S08.mp4",
+   "in": 0.0,
+   "t0": 30.8,
+   "t1": 31.92
+  }
+ ],
+ "subs": {
+  "style": {
+   "kr_size": 58,
+   "en_size": 32,
+   "kr_y": 0.656,
+   "en_dy": 0.036,
+   "jp_dy": 0.06,
+   "jp_size": 28,
+   "outline": 2.4,
+   "shadow": 1.8,
+   "kr_font": "Pretendard SemiBold",
+   "en_font": "Pretendard",
+   "jp_font": "Noto Sans JP"
+  },
+  "events": [
+   {
+    "t0": 0.0,
+    "t1": 1.5,
+    "kr": "한 달 전 약속 잊지않았지?",
+    "en": "Remember our plans from last month?",
+    "jp": ""
+   },
+   {
+    "t0": 1.6,
+    "t1": 2.6,
+    "kr": "아...",
+    "en": "Uh...",
+    "jp": ""
+   },
+   {
+    "t0": 3.0,
+    "t1": 3.7,
+    "kr": "한정선 사줄테니까 나와!",
+    "en": "Come out! I'll treat you to Hanjungsun!",
+    "jp": ""
+   },
+   {
+    "t0": 3.75,
+    "t1": 6.0,
+    "kr": "(약속 취소됐으면 좋겠다...)",
+    "en": "(I wish the plan got cancelled...)",
+    "jp": ""
+   },
+   {
+    "t0": 6.7,
+    "t1": 7.3,
+    "kr": "미루야!",
+    "en": "Miru!",
+    "jp": ""
+   },
+   {
+    "t0": 7.7,
+    "t1": 8.3,
+    "kr": "야, 김꾸이",
+    "en": "Hey, Ggooii Kim",
+    "jp": ""
+   },
+   {
+    "t0": 8.7,
+    "t1": 9.75,
+    "kr": "너 살 왜 이렇게 쪘냐?",
+    "en": "How'd you gain so much weight?",
+    "jp": ""
+   },
+   {
+    "t0": 9.75,
+    "t1": 10.5,
+    "kr": "아니거든?!",
+    "en": "I did not!",
+    "jp": ""
+   },
+   {
+    "t0": 11.0,
+    "t1": 12.8,
+    "kr": "(와... 진짜 맛있겠다...)",
+    "en": "(Wow... that looks so good...)",
+    "jp": ""
+   },
+   {
+    "t0": 14.25,
+    "t1": 15.0,
+    "kr": "한정선 먹방 시작~!",
+    "en": "Hanjungsun mukbang start~!",
+    "jp": ""
+   },
+   {
+    "t0": 16.25,
+    "t1": 20.25,
+    "kr": "복숭아 요거트맛!♥",
+    "en": "peach yogurt flavor! ♥",
+    "jp": ""
+   },
+   {
+    "t0": 25.2,
+    "t1": 26.0,
+    "kr": "야! 김꾸이!!!",
+    "en": "Hey! Ggooii Kim!!!",
+    "jp": ""
+   },
+   {
+    "t0": 28.0,
+    "t1": 29.3,
+    "kr": "복숭아 요거트 내 최애란 말이야!",
+    "en": "Peach yogurt is my favorite!",
+    "jp": ""
+   }
+  ]
+ },
+ "audio": {
+  "clip_gain": 1.0,
+  "music": null,
+  "sfx": [],
+  "lufs": -14,
+  "tp": -1.0
+ }
+}

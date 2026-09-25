@@ -1,0 +1,167 @@
+{
+ "name": "rank15_DbpJNIDzseF",
+ "fps": 30,
+ "w": 1080,
+ "h": 1920,
+ "clips_dir": "clips",
+ "output": "rank15.mp4",
+ "shots": [
+  {
+   "id": "S01",
+   "file": "S01.mp4",
+   "in": 0.0,
+   "t0": 0.0,
+   "t1": 2.0
+  },
+  {
+   "id": "S02",
+   "file": "S02.mp4",
+   "in": 0.0,
+   "t0": 2.0,
+   "t1": 3.5
+  },
+  {
+   "id": "S03",
+   "file": "S03.mp4",
+   "in": 0.0,
+   "t0": 3.5,
+   "t1": 5.5
+  },
+  {
+   "id": "S04",
+   "file": "S04.mp4",
+   "in": 0.0,
+   "t0": 5.5,
+   "t1": 6.5
+  },
+  {
+   "id": "S05",
+   "file": "S05.mp4",
+   "in": 0.0,
+   "t0": 6.5,
+   "t1": 10.0
+  },
+  {
+   "id": "S06",
+   "file": "S06.mp4",
+   "in": 0.0,
+   "t0": 10.0,
+   "t1": 12.8
+  },
+  {
+   "id": "S07",
+   "file": "S07.mp4",
+   "in": 0.0,
+   "t0": 12.8,
+   "t1": 17.0
+  },
+  {
+   "id": "S08",
+   "file": "S08.mp4",
+   "in": 0.0,
+   "t0": 17.0,
+   "t1": 21.3
+  },
+  {
+   "id": "S09",
+   "file": "S09.mp4",
+   "in": 0.0,
+   "t0": 21.3,
+   "t1": 23.3
+  },
+  {
+   "id": "S10",
+   "file": "S10.mp4",
+   "in": 0.0,
+   "t0": 23.3,
+   "t1": 28.8
+  }
+ ],
+ "subs": {
+  "style": {
+   "kr_size": 58,
+   "en_size": 32,
+   "kr_y": 0.741,
+   "en_dy": 0.036,
+   "jp_dy": 0.06,
+   "jp_size": 28,
+   "outline": 2.4,
+   "shadow": 1.8,
+   "kr_font": "Pretendard SemiBold",
+   "en_font": "Pretendard",
+   "jp_font": "Noto Sans JP"
+  },
+  "events": [
+   {
+    "t0": 4.2,
+    "t1": 5.3,
+    "kr": "내 새우깡!!!",
+    "en": "My snack!!!",
+    "jp": ""
+   },
+   {
+    "t0": 5.3,
+    "t1": 6.5,
+    "kr": "이리 내놔!",
+    "en": "Give it back!",
+    "jp": ""
+   },
+   {
+    "t0": 6.5,
+    "t1": 8.25,
+    "kr": "언니 나 너무 배고파",
+    "en": "Sis, I'm so hungry",
+    "jp": ""
+   },
+   {
+    "t0": 8.25,
+    "t1": 10.0,
+    "kr": "한강에서는 라면을 먹어야한대",
+    "en": "They say you have to eat ramen at the Han River",
+    "jp": ""
+   },
+   {
+    "t0": 11.7,
+    "t1": 12.8,
+    "kr": "향기로운 냄새~",
+    "en": "Mmm, smells so good~",
+    "jp": ""
+   },
+   {
+    "t0": 20.0,
+    "t1": 21.3,
+    "kr": "짜증나...",
+    "en": "So annoying...",
+    "jp": ""
+   },
+   {
+    "t0": 23.25,
+    "t1": 24.25,
+    "kr": "제 이름은",
+    "en": "My name is",
+    "jp": ""
+   },
+   {
+    "t0": 24.25,
+    "t1": 26.0,
+    "kr": "김꾸이입니다~",
+    "en": "Ggooii Kim~",
+    "jp": ""
+   },
+   {
+    "t0": 26.25,
+    "t1": 27.5,
+    "kr": "자, 여기~",
+    "en": "Here you go~",
+    "jp": ""
+   }
+  ]
+ },
+ "audio": {
+  "clip_gain": 1.0,
+  "music": null,
+  "sfx": [],
+  "lufs": -14,
+  "tp": -1.0
+ }
+}

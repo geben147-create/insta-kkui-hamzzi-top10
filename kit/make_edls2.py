@@ -1,6 +1,8 @@
 import json
+import sys
 from content_rank4_10 import PAGES_4_10
-for v in PAGES_4_10:
+from content_rank11_17 import PAGES_11_17
+for v in (PAGES_11_17 if "11" in sys.argv else PAGES_4_10):
     shots = []
     for sh in v["shots"]:
         d = {"id": sh["id"], "file": f"{sh['id']}.mp4", "in": 0.0, "t0": sh["t0"], "t1": sh["t1"]}
@@ -13,6 +15,6 @@ for v in PAGES_4_10:
            "output": f"rank{v['rank']}.mp4", "shots": shots,
            "subs": {"style": st, "events": v["subs"]} if v["subs"] else {"events": []},
            "audio": {"clip_gain": 1.0, "music": None, "sfx": [], "lufs": -14, "tp": -1.0}}
-    if v["rank"] in (4, 7): edl["fps"] = 24
+    if v["rank"] in (4, 7, 16): edl["fps"] = 24
     json.dump(edl, open(f"edl_rank{v['rank']}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print("edl", v["rank"], len(shots))

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>rank11_Dazoyz_CHwN</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Pretendard"; src: url("fonts/Pretendard-SemiBold.otf") format("opentype"); font-weight: 600; }
+      @font-face { font-family: "Noto Sans JP"; src: url("fonts/NotoSansJP-SemiBold.ttf") format("truetype"); font-weight: 600; }
+      body { margin: 0; background: #000; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #000; }
+      .shot, .inner { position: absolute; inset: 0; }
+      .shot video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+      .flash { position: absolute; inset: 0; background: #fff; opacity: 0; }
+      .cap { position: absolute; inset: 0; color: #fff; text-align: center; }
+      .cap p { position: absolute; left: 0; right: 0; margin: 0; line-height: 1.2; font-weight: 600;
+               text-shadow: 0 0 3px rgba(0, 0, 0, 0.85), 0 2px 4px rgba(0, 0, 0, 0.55); }
+      .cap .kr, .cap .en { font-family: "Pretendard", sans-serif; }
+      .cap .jp { font-family: "Noto Sans JP", sans-serif; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-width="1080" data-height="1920" data-duration="20.63">
+      <div class="shot" id="shot-S01"><div class="inner" id="in-S01"><video id="v-S01" class="clip" src="clips/S01.mp4" data-start="0" data-duration="2.47" data-media-start="0" data-track-index="0" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S02"><div class="inner" id="in-S02"><video id="v-S02" class="clip" src="clips/S02.mp4" data-start="2.47" data-duration="1.96" data-media-start="0" data-track-index="1" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S03"><div class="inner" id="in-S03"><video id="v-S03" class="clip" src="clips/S03.mp4" data-start="4.43" data-duration="3.57" data-media-start="0" data-track-index="0" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S04"><div class="inner" id="in-S04"><video id="v-S04" class="clip" src="clips/S04.mp4" data-start="8" data-duration="6.5" data-media-start="0" data-track-index="1" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S05"><div class="inner" id="in-S05"><video id="v-S05" class="clip" src="clips/S05.mp4" data-start="14.5" data-duration="4" data-media-start="0" data-track-index="0" muted playsinline></video></div></div>
+      <div class="shot" id="shot-S06"><div class="inner" id="in-S06"><video id="v-S06" class="clip" src="clips/S06.mp4" data-start="18.5" data-duration="2.13" data-media-start="0" data-track-index="1" muted playsinline></video></div></div>
+      <audio id="a-S01" src="clips/S01.mp4" data-start="0" data-duration="2.47" data-media-start="0" data-track-index="10" data-volume="1.0"></audio>
+      <audio id="a-S02" src="clips/S02.mp4" data-start="2.47" data-duration="1.96" data-media-start="0" data-track-index="11" data-volume="1.0"></audio>
+      <audio id="a-S03" src="clips/S03.mp4" data-start="4.43" data-duration="3.57" data-media-start="0" data-track-index="12" data-volume="1.0"></audio>
+      <audio id="a-S04" src="clips/S04.mp4" data-start="8" data-duration="6.5" data-media-start="0" data-track-index="13" data-volume="1.0"></audio>
+      <audio id="a-S05" src="clips/S05.mp4" data-start="14.5" data-duration="4" data-media-start="0" data-track-index="14" data-volume="1.0"></audio>
+      <audio id="a-S06" src="clips/S06.mp4" data-start="18.5" data-duration="2.13" data-media-start="0" data-track-index="15" data-volume="1.0"></audio>
+      <div class="cap clip" id="cap-00" data-start="2.5" data-duration="1" data-track-index="20"><p class="kr" style="top: 1387px; font-size: 58px">열 식히러 가야지</p><p class="en" style="top: 1472px; font-size: 32px">Time to cool off!</p></div>
+      <div class="cap clip" id="cap-01" data-start="7" data-duration="1.3" data-track-index="20"><p class="kr" style="top: 1387px; font-size: 58px">이제야 살겠네</p><p class="en" style="top: 1472px; font-size: 32px">Finally, that&#x27;s better.</p></div>
+      <div class="cap clip" id="cap-02" data-start="13.4" data-duration="0.9" data-track-index="20"><p class="kr" style="top: 1387px; font-size: 58px">왜 이렇게 더운거야?!</p><p class="en" style="top: 1472px; font-size: 32px">Why is it so hot?!</p></div>
+      <div class="cap clip" id="cap-03" data-start="16.8" data-duration="1.4" data-track-index="20"><p class="kr" style="top: 1387px; font-size: 58px">에어컨은 누가 발명했을까?</p><p class="en" style="top: 1472px; font-size: 32px">Who invented the air conditioner?</p></div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

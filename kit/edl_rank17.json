@@ -1,0 +1,146 @@
+{
+ "name": "rank17_Db5Nb5px2d_",
+ "fps": 30,
+ "w": 1080,
+ "h": 1920,
+ "clips_dir": "clips",
+ "output": "rank17.mp4",
+ "shots": [
+  {
+   "id": "S01",
+   "file": "S01.mp4",
+   "in": 0.0,
+   "t0": 0.0,
+   "t1": 1.5
+  },
+  {
+   "id": "S02",
+   "file": "S02.mp4",
+   "in": 0.0,
+   "t0": 1.5,
+   "t1": 12.5
+  },
+  {
+   "id": "S03",
+   "file": "S03.mp4",
+   "in": 0.0,
+   "t0": 12.5,
+   "t1": 15.0
+  },
+  {
+   "id": "S04",
+   "file": "S04.mp4",
+   "in": 0.0,
+   "t0": 15.0,
+   "t1": 19.0
+  },
+  {
+   "id": "S05",
+   "file": "S05.mp4",
+   "in": 0.0,
+   "t0": 19.0,
+   "t1": 24.0
+  },
+  {
+   "id": "S06",
+   "file": "S06.mp4",
+   "in": 0.0,
+   "t0": 24.0,
+   "t1": 31.0
+  },
+  {
+   "id": "S07",
+   "file": "S07.mp4",
+   "in": 0.0,
+   "t0": 31.0,
+   "t1": 33.5
+  }
+ ],
+ "subs": {
+  "style": {
+   "kr_size": 46,
+   "en_size": 30,
+   "kr_y": 0.718,
+   "en_dy": 0.03,
+   "jp_dy": 0.06,
+   "jp_size": 28,
+   "outline": 2.4,
+   "shadow": 1.8,
+   "kr_font": "Pretendard SemiBold",
+   "en_font": "Pretendard",
+   "jp_font": "Noto Sans JP"
+  },
+  "events": [
+   {
+    "t0": 1.5,
+    "t1": 2.6,
+    "kr": "니 뭔데 비켜라",
+    "en": "move get out the way",
+    "jp": ""
+   },
+   {
+    "t0": 2.75,
+    "t1": 3.8,
+    "kr": "왜 나한테 그래? 니가 비켜가",
+    "en": "Why me? You move",
+    "jp": ""
+   },
+   {
+    "t0": 4.25,
+    "t1": 5.8,
+    "kr": "좋은 말로 할때 얼른 비켜라",
+    "en": "Move while I'm still asking nicely",
+    "jp": ""
+   },
+   {
+    "t0": 7.75,
+    "t1": 9.5,
+    "kr": "쪼끄만한게 까불고 있어 진짜 주글래?",
+    "en": "Tiny ass thing acting tough. You wanna die?",
+    "jp": ""
+   },
+   {
+    "t0": 18.75,
+    "t1": 19.5,
+    "kr": "근데 얘 좀 짜증나게 귀엽네;;",
+    "en": "Okay but... why is this thing annoyingly cute?",
+    "jp": ""
+   },
+   {
+    "t0": 19.5,
+    "t1": 20.8,
+    "kr": "너!!! 당장 내려오지 못해!!??",
+    "en": "Get down. Right now!!!!",
+    "jp": ""
+   },
+   {
+    "t0": 21.0,
+    "t1": 22.0,
+    "kr": "안돼 우리 치킨 ㄱㄱ? 내가 쏨",
+    "en": "Nah. r u down for chicken? It's on me",
+    "jp": ""
+   },
+   {
+    "t0": 25.5,
+    "t1": 26.5,
+    "kr": "아싸 치킨 !!!!!!!!!!",
+    "en": "LET'S GOOO, CHICKEN!",
+    "jp": ""
+   },
+   {
+    "t0": 29.5,
+    "t1": 30.8,
+    "kr": "가보자고!!!!!!!!",
+    "en": "LET'S GOOO!!!!!!",
+    "jp": ""
+   }
+  ]
+ },
+ "audio": {
+  "clip_gain": 1.0,
+  "music": null,
+  "sfx": [],
+  "lufs": -14,
+  "tp": -1.0
+ }
+}

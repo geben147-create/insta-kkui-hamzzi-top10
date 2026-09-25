@@ -1,0 +1,104 @@
+{
+ "name": "rank11_Dazoyz_CHwN",
+ "fps": 30,
+ "w": 1080,
+ "h": 1920,
+ "clips_dir": "clips",
+ "output": "rank11.mp4",
+ "shots": [
+  {
+   "id": "S01",
+   "file": "S01.mp4",
+   "in": 0.0,
+   "t0": 0.0,
+   "t1": 2.47
+  },
+  {
+   "id": "S02",
+   "file": "S02.mp4",
+   "in": 0.0,
+   "t0": 2.47,
+   "t1": 4.43
+  },
+  {
+   "id": "S03",
+   "file": "S03.mp4",
+   "in": 0.0,
+   "t0": 4.43,
+   "t1": 8.0
+  },
+  {
+   "id": "S04",
+   "file": "S04.mp4",
+   "in": 0.0,
+   "t0": 8.0,
+   "t1": 14.5
+  },
+  {
+   "id": "S05",
+   "file": "S05.mp4",
+   "in": 0.0,
+   "t0": 14.5,
+   "t1": 18.5
+  },
+  {
+   "id": "S06",
+   "file": "S06.mp4",
+   "in": 0.0,
+   "t0": 18.5,
+   "t1": 20.63
+  }
+ ],
+ "subs": {
+  "style": {
+   "kr_size": 58,
+   "en_size": 32,
+   "kr_y": 0.741,
+   "en_dy": 0.036,
+   "jp_dy": 0.06,
+   "jp_size": 28,
+   "outline": 2.4,
+   "shadow": 1.8,
+   "kr_font": "Pretendard SemiBold",
+   "en_font": "Pretendard",
+   "jp_font": "Noto Sans JP"
+  },
+  "events": [
+   {
+    "t0": 2.5,
+    "t1": 3.5,
+    "kr": "열 식히러 가야지",
+    "en": "Time to cool off!",
+    "jp": ""
+   },
+   {
+    "t0": 7.0,
+    "t1": 8.3,
+    "kr": "이제야 살겠네",
+    "en": "Finally, that's better.",
+    "jp": ""
+   },
+   {
+    "t0": 13.4,
+    "t1": 14.3,
+    "kr": "왜 이렇게 더운거야?!",
+    "en": "Why is it so hot?!",
+    "jp": ""
+   },
+   {
+    "t0": 16.8,
+    "t1": 18.2,
+    "kr": "에어컨은 누가 발명했을까?",
+    "en": "Who invented the air conditioner?",
+    "jp": ""
+   }
+  ]
+ },
+ "audio": {
+  "clip_gain": 1.0,
+  "music": null,
+  "sfx": [],
+  "lufs": -14,
+  "tp": -1.0
+ }
+}

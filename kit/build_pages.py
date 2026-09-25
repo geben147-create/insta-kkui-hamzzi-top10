@@ -8,6 +8,7 @@ from content_rank1 import RANK1
 from content_rank2 import RANK2
 from content_rank3 import RANK3
 from content_rank4_10 import PAGES_4_10
+from content_rank11_17 import PAGES_11_17
 
 NOWIN = getattr(subprocess, "CREATE_NO_WINDOW", 0)
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # insta/
@@ -331,14 +332,14 @@ def index(pages):
                     f'<div><b>{v["rank"]}위 · {E(v["title"])}</b><p>{E(v["one_liner"])}</p></div></a>' for v in pages)
     css = CSS + ".cards{display:grid;gap:14px}.card{display:grid;grid-template-columns:120px 1fr;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;color:var(--ink);text-decoration:none}.card img{width:100%;border-radius:10px}"
     return (f'<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<title>인스타 김꾸이 TOP10 영상 분석</title><style>{css}</style></head><body><div class="top"><h1>인스타 햄찌 김꾸이(@ggooiikim) TOP10 — 똑같이 만들기 분석서</h1></div>'
+            f'<title>인스타 김꾸이 TOP17 영상 분석</title><style>{css}</style></head><body><div class="top"><h1>인스타 햄찌 김꾸이(@ggooiikim) TOP17 — 똑같이 만들기 분석서</h1></div>'
             f'<main><p class="lead">한 페이지 = 한 영상. 각 페이지에 샷별 캡처·구도·전환·사운드·AI 프롬프트·모델·FFmpeg/HyperFrames 편집법이 있습니다.</p>'
             f'<div class="cards">{cards}</div></main></body></html>')
 
 
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
-    pages = [RANK1, RANK2, RANK3] + PAGES_4_10
+    pages = [RANK1, RANK2, RANK3] + PAGES_4_10 + PAGES_11_17
     for v in pages:
         open(os.path.join(OUT, v["file"]), "w", encoding="utf-8").write(page(v, pages))
         print("wrote", v["file"], len(v["shots"]), "shots")
